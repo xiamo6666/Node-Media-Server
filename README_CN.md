@@ -7,10 +7,8 @@
 
 ![logo](https://www.nodemedia.cn/uploads/site_logo.png)
 
-一个 Node.js 实现的RTMP/HTTP/WebSocket/HLS/DASH流媒体服务器
+一个 Node.js 实现的RTMP/HTTP/WebSocket/HLS/DASH流媒体服务器支持国标
 
-## 微信赞赏码
-![zan](https://nodemedia.oss-cn-hangzhou.aliyuncs.com/1531102579211.jpg)
 
 # 特性
  - 跨平台支持 Windows/Linux/Unix
@@ -18,14 +16,8 @@
  - 支持缓存最近一个关键帧间隔数据，实现RTMP协议秒开
  - 支持RTMP直播流转LIVE-HTTP-FLV流,支持 [flv.js](https://github.com/Bilibili/flv.js) 播放
  - 支持RTMP直播流转LIVE-WebSocket-FLV,支持 [flv.js](https://github.com/Bilibili/flv.js) 播放
- - 支持星域CDN风格的鉴权
- - 支持事件回调
- - 支持https/wss加密传输
- - 支持服务器和流媒体信息统计
- - 支持RTMP直播流转HLS,DASH直播流
- - 支持RTMP直播流录制为MP4文件并开启faststart
- - 支持RTMP/RTSP中继
- - 支持API控制中继
+ - 支持国标GB28181
+
 
 # 用法 
 ## docker 版本
