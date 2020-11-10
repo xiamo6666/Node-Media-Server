@@ -3,7 +3,7 @@
 //  illuspas[a]msn.com
 //  Copyright (c) 2020 Nodemedia. All rights reserved.
 //
-const Logger = require('./node_core_logger');
+const Logger = require('./core/logger');
 
 const EventEmitter = require('events');
 const { spawn } = require('child_process');

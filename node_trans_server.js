@@ -3,10 +3,10 @@
 //  illuspas[a]gmail.com
 //  Copyright (c) 2018 Nodemedia. All rights reserved.
 //
-const Logger = require('./node_core_logger');
+const Logger = require('./core/logger');
 
 const NodeTransSession = require('./node_trans_session');
-const context = require('./node_core_ctx');
+const context = require('./core/ctx');
 const { getFFmpegVersion, getFFmpegUrl } = require('./node_core_utils');
 const fs = require('fs');
 const _ = require('lodash');

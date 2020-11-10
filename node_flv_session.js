@@ -4,9 +4,9 @@
 //  Copyright (c) 2018 Nodemedia. All rights reserved.
 //
 const URL = require("url");
-const AMF = require("./node_core_amf");
-const Logger = require("./node_core_logger");
-const context = require("./node_core_ctx");
+const AMF = require("./core/amf");
+const Logger = require("./core/logger");
+const context = require("./core/ctx");
 const NodeCoreUtils = require("./node_core_utils");
 const redis = require('./node_redis');
 

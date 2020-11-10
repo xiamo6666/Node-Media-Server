@@ -3,10 +3,10 @@
 //  illuspas[a]msn.com
 //  Copyright (c) 2020 Nodemedia. All rights reserved.
 //
-const Logger = require('./node_core_logger');
+const Logger = require('./core/logger');
 
 const NodeFissionSession = require('./node_fission_session');
-const context = require('./node_core_ctx');
+const context = require('./core/ctx');
 const { getFFmpegVersion, getFFmpegUrl } = require('./node_core_utils');
 const fs = require('fs');
 const _ = require('lodash');

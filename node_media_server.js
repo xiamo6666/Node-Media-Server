@@ -5,14 +5,14 @@
 //
 
 const Https = require('https');
-const Logger = require('./node_core_logger');
+const Logger = require('./core/logger');
 const NodeRtmpServer = require('./node_rtmp_server');
 const NodeHttpServer = require('./node_http_server');
 const NodeTransServer = require('./node_trans_server');
 const NodeRelayServer = require('./node_relay_server');
 const NodeFissionServer = require('./node_fission_server');
 const NodeGB28181StreamServer = require('./GB28181_stream_server')
-const context = require('./node_core_ctx');
+const context = require('./core/ctx');
 const Package = require("./package.json");
 
 class NodeMediaServer {

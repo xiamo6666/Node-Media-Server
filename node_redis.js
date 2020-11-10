@@ -1,7 +1,7 @@
 const redis = require('redis');
-var url = '10.10.11.104'
-var port = 6379;
-var passwd = 'ebit';
+const url = '10.10.11.104';
+const port = 6379;
+const passwd = 'ebit';
 const client = redis.createClient(port, url)
 client.auth(passwd)
 const hset = (key, value) => {
