@@ -12,25 +12,23 @@ class NodeGB28181StreamServer {
         this.listen = 9200;
         this.host = '0.0.0.0';
 
-        //开启端口复用
-        if (true) {
-            //RTP-RTCP UDP-Server
-            this.udpServer = new RtpSession(this.listen);
-            this.udpServer.createRtcpServer();
 
-            //TCP-Server
-            this.tcpServer = Net.createServer((socket) => {
-                let session = new NodeRtpSession(config, socket);
+        //RTP-RTCP UDP-Server
+        this.udpServer = new RtpSession(this.listen);
+        this.udpServer.createRtcpServer();
 
-                session.run();
-            });
-        }
+        //TCP-Server
+        this.tcpServer = Net.createServer((socket) => {
+            let session = new NodeRtpSession(config, socket);
+            session.run();
+        });
+
 
         //主动取流客户端（TCP/主动模式）
         this.tcpClients = {};
 
         //默认的RTMP服务器基地址
-        this.rtmpServer = 'rtmp://10.10.11.31:1935/live';
+        this.rtmpServer = 'rtmp://127.0.0.1:1935/live';
     }
 
     run() {
